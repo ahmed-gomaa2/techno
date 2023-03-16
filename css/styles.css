@@ -66,9 +66,24 @@ body {
 
 .Testimonial__row {
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .Testimonial__active {
     background: blue;
     color: white;
+}
+
+.Testimonial__review {
+    opacity: 0;
+    animation: fade-in 1s forwards ;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
